@@ -63,6 +63,7 @@ if st.button("Predict") and input_sms.strip():  # Ensure input is not empty
     # Preprocessing
     transformed_sms = transform_text(input_sms)
 
+    # Vectorization
     vector_input = tfidf.transform([transformed_sms])
 
     # Prediction
